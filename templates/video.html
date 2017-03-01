@@ -1,0 +1,17 @@
+<!-- Alexander Wheadon -->
+<!-- 02/08/17 -->
+<!-- Assignment 1 -->
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<!-- Title of page -->
+<h1>{{video}}</h1>
+<br>
+<br>
+<!-- Create List of previous messages -->
+<iframe src="https://www.youtube.com/embed/{{vidurl}}" width="853" height="480" frameborder="0" allowfullscreen></iframe>""")
+<p>Click <a href="/{{rank}}">here</a> to return to resource selection.</p>
+<p>Click <a href="/">here</a> to return to rank selection.</p>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<!-- Allow user to enter and post a message -->
+{% endblock %}

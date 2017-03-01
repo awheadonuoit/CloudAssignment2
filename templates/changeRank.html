@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<!-- Title of page -->
+<h1>Change Student Ranks!</h1>
+<br>
+<!-- Create List of previous messages -->
+<h3>Enter A Students Username:</h3>
+
+ 	<form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}"><br>
+        <input type="radio" name="rank" value="white">White<br>
+  		<input type="radio" name="rank" value="yellow">Yellow<br>
+  		<input type="radio" name="rank" value="orange">Orange<br>
+  		<input type="radio" name="rank" value="red">Red<br>
+  		<input type="radio" name="rank" value="green">Green<br>
+  		<input type="radio" name="rank" value="purple">Purple<br>
+  		<input type="radio" name="rank" value="blue">Blue<br>
+  		<input type="radio" name="rank" value="blue with black">Blue with Black<br>
+  		<input type="radio" name="rank" value="brown">Brown<br>
+  		<input type="radio" name="rank" value="brown with black">Brown with black<br>
+  		<input type="radio" name="rank" value="black">Black<br>
+
+        <input class="btn btn-default" type="submit" name="submit" value="Modify rank">
+    </form>
+
+<br>
+<p>Click <a href="/teacher">here</a> to go back to options page.</p>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<!-- Allow user to enter and post a message -->
+{% endblock %}

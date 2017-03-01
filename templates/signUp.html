@@ -1,0 +1,29 @@
+<!-- Alexander Wheadon -->
+<!-- 02/08/17 -->
+<!-- Assignment 1 -->
+{% extends "base.html" %}
+{% block content %}
+	  <!-- Login page title -->
+      <h1>Create Account</h1>
+      <br>
+      <!-- Allow user to enter login credentials -->
+      <form action="" method="post">
+      	Name: <br>
+        <input type="text" placeholder="First" name="firstName" value="{{
+          request.form.firstName }}">
+        
+        <input type="text" placeholder="Last" name="lastName" value="{{
+          request.form.lastName }}"> <br> <br>
+        Email: <br>
+        <input type="text" placeholder="Email" name="email" value="{{
+          request.form.email }}"> <br> <br>
+        Username: <br>
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}"> <br> <br>
+        Password: <br>
+        <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}"> <br> <br>
+        
+        <input class="btn btn-default" type="submit" value="Sign Up">
+      </form>
+{% endblock %}

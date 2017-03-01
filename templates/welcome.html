@@ -1,0 +1,14 @@
+<!-- Alexander Wheadon -->
+<!-- 02/08/17 -->
+<!-- Assignment 1 -->
+{% extends "base.html" %}
+{% block content %}
+			<!-- Title for welcome page -->
+			<h1>Welcome to the App!</h2>
+			<br>
+			<!-- Link to login page -->
+			<p>Click <a href="/login">here</a> to go login.</p>
+		      	{% for message in get_flashed_messages() %}
+        		{{ message }}
+			{% endfor %}
+{% endblock %}
