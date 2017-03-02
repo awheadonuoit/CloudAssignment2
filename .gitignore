@@ -3,3 +3,5 @@ venv
 *.db
 *.exe
 *.json
+*.pkk
+*.pem

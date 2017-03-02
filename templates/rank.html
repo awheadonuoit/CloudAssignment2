@@ -1,6 +1,6 @@
 <!-- Alexander Wheadon -->
-<!-- 02/08/17 -->
-<!-- Assignment 1 -->
+<!-- 02/21/17 -->
+<!-- Assignment 2 -->
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% block content %}
@@ -8,8 +8,7 @@
 <h1>List of {{ranks}} belt materials!</h1>
 <br>
 
-<!-- Create List of previous messages -->
-
+<!-- Create List of videos for the selected rank -->
 {% for video in videos %}
 <a href="/{{ranks}}/{{video}}">{{ video }}</a> <br><br>
 {% endfor %}

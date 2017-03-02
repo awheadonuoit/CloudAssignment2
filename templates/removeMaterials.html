@@ -1,12 +1,15 @@
+<!-- Alexander Wheadon -->
+<!-- 02/21/17 -->
+<!-- Assignment 2 -->
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% block content %}
 <!-- Title of page -->
 <h1>Remove Materials!</h1>
 <br>
-<!-- Create List of previous messages -->
 
  	<form action="" method="post">
+        <!-- Dropdown menu for selecting rank -->
         <select name="rank">
           <option value="white">White</option>
           <option value="yellow">Yellow</option>
@@ -20,11 +23,15 @@
           <option value="brown with black">Brown with Black</option>
           <option value="black">Black</option>
         </select>
+        <!-- Button that shows videos for the given rank -->
         <input class="btn btn-default" type="submit" name="submit" value="show videos"><br>
+        <!-- If there are videos -->
         {% if videos != [] %}
+          <!-- Show a checkbox for each video in the list -->
           {% for video in videos %}
             <input type="checkbox" name="materials" value="{{video}}">{{video}}<br>
           {% endfor %}
+          <!-- Button to delete selected videos -->
           <input class="btn btn-default" type="submit" name="submit" value="Delete videos"><br>
         {% endif %}
 

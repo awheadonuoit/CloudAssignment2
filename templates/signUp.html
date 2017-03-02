@@ -1,12 +1,12 @@
 <!-- Alexander Wheadon -->
-<!-- 02/08/17 -->
-<!-- Assignment 1 -->
+<!-- 02/21/17 -->
+<!-- Assignment 2 -->
 {% extends "base.html" %}
 {% block content %}
 	  <!-- Login page title -->
       <h1>Create Account</h1>
       <br>
-      <!-- Allow user to enter login credentials -->
+      <!-- Allow user to enter signup credentials -->
       <form action="" method="post">
       	Name: <br>
         <input type="text" placeholder="First" name="firstName" value="{{
@@ -23,7 +23,7 @@
         Password: <br>
         <input type="password" placeholder="Password" name="password" value="{{
           request.form.password }}"> <br> <br>
-        
+        <!-- Button to submit signup credentials -->
         <input class="btn btn-default" type="submit" value="Sign Up">
       </form>
 {% endblock %}

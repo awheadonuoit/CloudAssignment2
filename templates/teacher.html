@@ -1,20 +1,18 @@
 <!-- Alexander Wheadon -->
-<!-- 02/08/17 -->
-<!-- Assignment 1 -->
+<!-- 02/21/17 -->
+<!-- Assignment 2 -->
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% block content %}
 <!-- Title of page -->
 <h1>Welcome {{uname}}!</h1>
 <br>
-<!-- Create List of previous messages -->
 <h3>Available Instructor Actions:</h3>
-
+<!-- List instuctors actions -->
 <a href="/teacher/ranks">Modify student rank.</a><br>
 <a href="/teacher/add">Add materials.</a><br>
 <a href="/teacher/remove">Remove materials.</a><br>
 
 <br>
 <p>Click <a href="/logout">here</a> to logout.</p>
-<!-- Allow user to enter and post a message -->
 {% endblock %}
